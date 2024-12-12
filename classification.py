@@ -66,7 +66,6 @@ def run_perceptron(X_train: np.array, y_train: np.array, X_test: np.array) -> np
     #randomize weights initially
     w = np.random.randn(X_train.shape[1])
     y_train[y_train == 0] = -1
-    y_test[y_test == 0] = -1
     #max of 1000 training runs
     for i in range(1000):
         correct = True
